@@ -56,3 +56,13 @@ p{
   padding-bottom: 5rem;
   font-size: 1.6rem;
 }
+.paragraphs{
+  float: left;
+}
+.inclhtml{
+  float: left;
+  margin-left: 6rem;
+}
+.itemsp{
+  clear: both;
+}

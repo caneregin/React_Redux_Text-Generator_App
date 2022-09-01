@@ -19,13 +19,20 @@ function Body() {
     }
     return (
         <div>
-            <input type="number" min="1" onChange={(e) => setChangeRandomParas(e.target.value)} value={changeRandomParas}  />
-            <label for="htmlinclude">Include HTML</label>
-            <select name="htmlinclude" id="htmlinclude" onClick={handleChangeDropdown}>
-                <option value="NO">NO</option>
-                <option value="YES">YES</option>
-            </select>
-            <p>{items}</p>
+            <div className='paragraphs'>
+                <h3>Paragraphs</h3>
+                <input type="number" min="1" onChange={(e) => setChangeRandomParas(e.target.value)} value={changeRandomParas} />
+            </div>
+            <div className='inclhtml'>
+                <h3>Include HTML</h3>
+                <select name="htmlinclude" id="htmlinclude" onClick={handleChangeDropdown}>
+                    <option value="NO">NO</option>
+                    <option value="YES">YES</option>
+                </select>
+            </div>
+            <div className='itemsp'>
+                <p>{items}</p>
+            </div>
         </div>
     )
 }
